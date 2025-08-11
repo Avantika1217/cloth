@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>FEEDBACK</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION SECTION -->
+
+        <section id="header">
+            <a href=""><img src="" class="logo" alt="">COMBEE</a>
+            <div>
+            <ul id="navbar">
+                <li><a href="Combee.html">Home</a></li>
+                <li><a href="man.html">Cat </a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="order.html">Order-page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="feedback.html">Feedback</a></li>
+                <li id="la-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="la-bag"><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                <li id="la-bag"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                
+            </ul>
+        </div>
+
+            <!-- MOBILE SECTION -->
+
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                <a href="login1.html"><i class="fa-solid fa-user"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+
+        <!-- FEEDBACK SECTION -->
+
+    
+        <section class="feedback-section">
+            <div class="container">
+                <h2>We value your feedback!</h2>
+                <p>Please fill out the form below to let us know your thoughts.</p>
+    
+                <form id="feedbackForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e43168a4-1afd-4dbb-b095-7937f3f54a68">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="1">1 - Very Dissatisfied</option>
+                            <option value="2">2 - Dissatisfied</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Satisfied</option>
+                            <option value="5">5 - Very Satisfied</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn">Submit Feedback</button>
+                </form>
+    
+                <div id="thankYouMessage" class="thank-you-message" style="display:none;">
+                    <h3>Thank you for your feedback!</h3>
+                    <p>We appreciate your time and input.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="combee.html">1</a>
+            <a href="man.html">2</a>
+            <a href="woman.html">3</a>
+            <a href="about.html">4</a>
+            <a href="order.html">5</a>
+            <a href="contact.html">6</a>
+            <a href="feedback.html">7</a>
+            <a href="combee.html"><i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+
+    
+
+        <!-- FOOTER SECTION -->
+        
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:-</strong>Indiranagar,Madhavnagar Road Kupwad</p>
+            <p><strong>Phone:-</strong>+01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:-</strong>10:00 - 18:00 ,Mon - Sat</p>
+
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Whishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <p>Secured payment Gateways</p>
+            <img src="" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Fashion Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SECTION -->
+
+    <script src="feedback.js"></script>
+</body>
+</html>
+
